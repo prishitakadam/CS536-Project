@@ -40,9 +40,9 @@ In the following experiment, we varied the initial congestion window of all the 
 This experiment measures latency and is measured against 3 parts, in the first part, the RTT was varied keeping bandwidth constant, in the second part, the bandwidth was varied keeping the RTT constant, and in the third part, we calculated the Bandwith Delay Product where both RTT and bandwidth were varied.
 
 <p align="left">
-  <img src="./images/latency_improvement_bdp.png" width="325" height="250" />
-  <img src="./images/latency_improvement_rtt.png" width="325" height="250" />
-  <img src="./images/lateny_improvement_bw.png" width="325" height="250" />
+  <img src="./images/latency_improvement_bdp.png" width="275" height="200" />
+  <img src="./images/latency_improvement_rtt.png" width="275" height="200" />
+  <img src="./images/lateny_improvement_bw.png" width="275" height="200" />
 </p>
 
 ### Impact on subnets of varying the number of segments
