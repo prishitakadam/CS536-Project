@@ -22,6 +22,19 @@ In this experiment, we changed the initial congestion window size from 3 to 42 a
 </p>
 
 ### Impact of Congestion Window size on Latency in Lossless and Lossy networks
+In the following experiment, we varied the initial congestion window of all the hosts from 3 to 42 segments to observe how this initial window can affect the latency of the TCP connections in both a lossless and a lossy network. We observe that in the lossless network the average latency follows a downward trend till window size $10$ and then starts increasing gradually. The window size 10 is observed to be the best window size across all bandwidths.
+
+<p align="left">
+  <img src="./images/lossless_1.png" width="500" height="350" />
+  <img src="./images/exp1_RTT.png" width="500" height="350" />
+</p>
+
+ TThe trend is followed in the lossy network as well with the exception that the average latency increases substantially across all window sizes for every bandwidth compared to its lossless counterpart. 
+
+<p align="left">
+  <img src="./images/lossy_1.png" width="500" height="350" />
+  <img src="./images/exp1_RTT_loss.png" width="500" height="350" />
+</p>
 
 ### Impact on subnets of varying BW, RTT and BDP
 
