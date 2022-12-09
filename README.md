@@ -11,7 +11,7 @@ To reduce Web latency during the slow start phase of a connection, the paper pro
 
 All of our experiments were conducted on an AWS EC2 instance, on a Linux t2.large Virtual Machine running on Ubuntu Version 22.04. We emulated the experiments on a Mininet instance with Five Hosts and One Switch, with One considered as the server, and the other four clients as shown below
 <p align="center">
-  <img src="./images/effect_on_retransmission_rate.png" width="350" height="350" />
+  <img src="./images/experimental_setup.png" width="350" height="350" />
 </p>
 
 ### Impact of Congestion Window size on Latency
