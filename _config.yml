@@ -4,4 +4,4 @@ plugins:
 
 title: [Reproducing "An argument for increasing TCP’s initial congestion window"]
 description: ['Team Members: Abhishek Arvind, Piyush Jaiswal, Prishita Kadam, Rahul Senguttuvan, Rashmi Phatak, Vibhu Sehra']
-show_downloads: [false]
+show_downloads: [true]
