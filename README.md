@@ -29,7 +29,7 @@ In the following experiment, we varied the initial congestion window of all the 
   <img src="./images/exp1_RTT.png" width="400" height="250" />
 </p>
 
- TThe trend is followed in the lossy network as well with the exception that the average latency increases substantially across all window sizes for every bandwidth compared to its lossless counterpart. 
+ The trend is followed in the lossy network as well with the exception that the average latency increases substantially across all window sizes for every bandwidth compared to its lossless counterpart. 
 
 <p align="left">
   <img src="./images/lossy_1.png" width="400" height="250" />
@@ -37,8 +37,20 @@ In the following experiment, we varied the initial congestion window of all the 
 </p>
 
 ### Impact on subnets of varying BW, RTT and BDP
+This experiment measures latency and is measured against 3 parts, in the first part, the RTT was varied keeping bandwidth constant, in the second part, the bandwidth was varied keeping the RTT constant, and in the third part, we calculated the Bandwith Delay Product where both RTT and bandwidth were varied.
+
+<p align="left">
+  <img src="./images/latency_improvement_bdp.png" width="325" height="250" />
+  <img src="./images/latency_improvement_rtt.png" width="325" height="250" />
+  <img src="./images/lateny_improvement_bw.png" width="325" height="250" />
+</p>
 
 ### Impact on subnets of varying the number of segments
+In this experiment, we varied the segment size from 3 to 100KB while keeping the Bandwidth and RTT constant and the latency was calculated for the base and experimental window size. A graph of Absolute Improvement and Percentage improvement in latency is plotted. It was observed that there is a considerable increase in both absolute and percentage improvement of latency for payload sizes of 7KB and above. Also, for payload sizes of 50KB and above, there is a high absolute improvement as compared to their percentage improvements. This is due to high values of latency at these payload sizes.
+
+<p align="center">
+  <img src="./images/latency_improv_vs_payload.png" width="400" height="250" />
+</p>
 
 ## Limitations
 The primary reason for an increase in latency is due to packet losses caused by overflowing bottleneck buffers. TCP flows are prolonged due to these losses as they add extra RTTs that are required to recover lost packets. This may also occasionally result in retransmission timeouts. The retransmission rate of TCP represents an upper bound for the percentage of packets lost as a result of congestion. We conducted an experiment to measure the impact of init_cwnd=10 on the retransmission rate. We calculated the average retransmission rate for initial congestion windows 3, 10, and 16 for payloads of different sizes. We found that as the value of the initial congestion window increases the average retransmission rate also increases. This is because the effective burst size transmitted is larger for a higher initial congestion window which in case results in an increased retransmission rate.
