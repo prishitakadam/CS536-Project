@@ -1,5 +1,7 @@
 # Reproducing "An argument for increasing TCP’s initial congestion window"
 
+## Team Members: Abhishek Arvind, Piyush Jaiswal, Prishita Kadam, Rahul Senguttuvan, Rashmi Phatak, Vibhu Sehra
+
 ## Introduction
 To reduce Web latency during the slow start phase of a connection, the paper proposes increasing TCP's initial congestion window. TCP uses the slow start algorithm early in the connection lifetime to grow the amount of data that may be outstanding at a given time. In slow start the congestion window size increases based on the number of segments acknowledged. The size of the window increases until a packet loss occurs. The packet loss occurs due to router buffer overflow. After the packet loss occurs the connection exits a slow start to enter the congestion avoidance phase. Since the majority of connections in Web Search are short-lived and finish before exiting the slow start phase, TCP’s initial congestion window is a crucial parameter in determining flow completion time.
 
